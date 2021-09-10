@@ -22,12 +22,16 @@ const AddRecipe = ({onAdd}) => {
     return (
         <form onSubmit={onSubmit}>
             <div>
-                <label>recipe-name</label>
-                <input type="textbox" name="recipe-name" value={name} onChange={(e)=> setName(e.target.value)}/>
+                <label>recipe-name
+                    <input className="recipe-name" type="text" name="recipe-name" value={name} onChange={(e)=> setName(e.target.value)}/>
+                </label>
+                
             </div>
             <div>
-                <label>recipe-instructions</label>
-                <input type="textbox" name="recipe-instructions" value={instructions} onChange={(e)=> setInstructions(e.target.value)}/>
+                <label>recipe-instructions
+                    <input className="recipe-instructions" type="text" name="recipe-instructions" value={instructions} onChange={(e)=> setInstructions(e.target.value)}/>   
+                </label>
+                
             </div>
             <input type="submit" value="Add" />
         </form>

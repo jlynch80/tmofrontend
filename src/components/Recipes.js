@@ -3,11 +3,11 @@ import Recipe from './Recipe'
 
 const Recipes = ({recipes}) => {
     return (
-        <div>
+        <ul>
             {recipes.map((recipe) =>
                 <Recipe recipe={recipe} />
             )}
-        </div>
+        </ul>
     )
 }
 
