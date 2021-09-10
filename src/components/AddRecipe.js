@@ -23,11 +23,11 @@ const AddRecipe = ({onAdd}) => {
         <form onSubmit={onSubmit}>
             <div>
                 <label>recipe-name</label>
-                <input type="text" name="recipe-name" value={name} onChange={(e)=> setName(e.target.value)}/>
+                <input type="textbox" name="recipe-name" value={name} onChange={(e)=> setName(e.target.value)}/>
             </div>
             <div>
                 <label>recipe-instructions</label>
-                <input type="text" name="recipe-instructions" value={instructions} onChange={(e)=> setInstructions(e.target.value)}/>
+                <input type="textbox" name="recipe-instructions" value={instructions} onChange={(e)=> setInstructions(e.target.value)}/>
             </div>
             <input type="submit" value="Add" />
         </form>
